@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato - League Cursos</title>
+
+		<link rel="stylesheet" href="Estilos/reset.css"> <!-- FAZ CHAMADA NOS ARQUIVOS DO CSS --->
+		<link rel="stylesheet" href="Estilos/style.css"> <!-- FAZ CHAMADA NOS ARQUIVOS DO CSS --->
+	</head>
+	<body bgcolor="515F6C">
+		<header> <!--- A Tag header serve para indicar para os navegadores onde está o cabeçalho do nosso site --->
+			<div class="caixa"> <!-- CRIA UMA CLASSE CHAMADA CAIXA --->
+				<h1><img src="Imagens/logo.png" alt="Logo da League" width="400" height="200"></h1> <!-- MOSTRA A IMAGEM DO LOGO --->
+
+				<nav> <!-- SEÇÃO NAVEGAVEL - representa uma seção de uma página que aponta para outras páginas ou para outras áreas da página-->
+					<ul> <!-- CRIA UMA LISTA  --->
+						<li><a href="index.html"><font color="#C4C4C4"><u>Home</u></font></a>a</li> <!-- MONTA NOVAMENTE O MENU --->
+						<li><a href="produtos.html"><font color="#C4C4C4"><u>Cursos</u></font></a></li> <!-- MONTA NOVAMENTE O MENU --->
+						<li><a href="contato.html"><font color="#C4C4C4"><u>Contato</u></font></a></li> <!-- MONTA NOVAMENTE O MENU --->
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<form>
+				<label for="nomesobrenome">Nome e Sobrenome</label> <!-- CRIA UM LABEL  --->
+				<input type="text" id="nomesobrenome" class="input-padrao" required> 
+
+				<label for="nicklol">Nick no League of Legends</label> <!-- CRIA UM LABEL  --->
+				<input type="text" id="nicklol" class="input-padrao" required> 
+
+				<label for="email">Email</label> <!-- CRIA UM LABEL  --->
+				<input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<label for="telefone">Telefone</label> <!-- CRIA UM LABEL  --->
+				<input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<label for="mensagem">Fale Sobre Voce</label> <!-- CRIA UM LABEL  --->
+				<textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea> <!-- CRIA UM CAIXA COM UM EXEMPLO DENTRO  --->
+
+				<fieldset> <!-- AGRUPA ELEMENTOS --->
+					<legend>Como prefere o nosso contato?</legend>
+					<label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"> Email</label>
+					
+					<label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"> Telefone</label>
+					
+					<label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked> WhatsApp</label>
+				</fieldset> <!-- AGRUPA ELEMENTOS --->
+
+				<fieldset> <!-- AGRUPA ELEMENTOS --->
+					<legend>Qual horário de Disponibilidade para o Curso?</legend>
+					<select> <!-- representa um controle que apresenta um menu de opções --->
+						<option>Manhã</option> <!-- menu de opções --->
+						<option>Tarde</option> <!-- menu de opções --->
+						<option>Noite</option> <!-- menu de opções --->
+					</select>
+				</fieldset> <!-- AGRUPA ELEMENTOS --->
+
+				<label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades por email?</label>
+
+				<input type="submit" value="Enviar formulário" class="enviar">
+			</form>
+
+
+			<h1>Horario Suporte</h1>
+			<table> <!-- CRIA UMA TABELA --->
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Dia</td> <!-- cria coluna na tabela --->
+					<td>Horário</td> <!-- cria uma linha na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Segunda</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria uma linha na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Terça</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria uma linha na tabela --->
+				</tr>								
+				<tr>
+					<td>Quarta</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria coluna na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Quinta</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria coluna na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Sexta</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria coluna na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Sabado</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria uma linha na tabela --->
+				</tr>
+				<tr> <!-- cria uma linha na tabela --->
+					<td>Domingo</td> <!-- cria coluna na tabela --->
+					<td>6h ~ 23h</td> <!-- cria uma linha na tabela --->
+				</tr>
+			</table>
+		</main>
+
+		<footer> <!--- MOSTRA NO RODAPE --->
+			<img src="Imagens/logo.png" width="500" height=""> <!-- MOSTRA A IMAGEM DO LOGO  --->
+			<p class="copyright">&copy; Copyright League Cursos - 2023</p> <!-- MOSTRA A MENSAGEM  --->
+		</footer>
+	</body>
+</html>
